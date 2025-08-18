@@ -15,11 +15,12 @@ This repository is structured as follows:
 ├── scripts/
 ├── xschem/
 ├── yosys/
+├── ethz.env
 ├── Makefile
 └── proot.sh
 ```
 
-`klayout/`, `openroad/`, `yosys/` and `rtl` contain the source code and scripts for the digital design, while `xschem/` contains the source code for the analog design. The `scripts/` directory contains various Python scripts for analyzing and visualizing the design. The `.devcontainer/` directory contains configuration files for a [dev container](https://CedricHirschi.github.io/osams-docs/setup/container/#starting-a-dev-container), and `Makefile` is used to build the project.
+`klayout/`, `openroad/`, `yosys/` and `rtl` contain the source code and scripts for the digital design, while `xschem/` contains the source code for the analog design. The `scripts/` directory contains various Python scripts for analyzing and visualizing the design. The `.devcontainer/` directory contains configuration files for a [dev container](https://CedricHirschi.github.io/osams-docs/setup/container/#starting-a-dev-container), and `Makefile` is used to build the project. `ethz.env` is used to configure the environment for the ETH Zurich internal tools. `proot.sh` is used to set up a cosimulation environment for XSCHEM.
 
 
 ## Setup
