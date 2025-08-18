@@ -1,0 +1,58 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=primitive
+format="@name [ @@clk_i @@start_i @@rst_ni @@comp_p_i @@comp_n_i ] [ @@compare_o @@sample_o @@dac_p_o[0..6] @@dac_n_o[0..6] @@rdy_o @@result_o[0..7] ] @model"
+template="name=A1 model=adc device_model=\\".model dut d_cosim simulation=\\\\"ivlng\\\\" sim_args=[\\\\"adc\\\\"]\\""
+}
+V {}
+S {}
+E {}
+L 4 -120 -50 -100 -50 {}
+L 4 -120 -30 -100 -30 {}
+L 4 -120 -10 -100 -10 {}
+L 4 -120 30 -100 30 {}
+L 4 100 0 120 0 {}
+L 4 100 60 120 60 {}
+L 4 100 -60 120 -60 {}
+L 4 100 80 120 80 {}
+L 4 -120 50 -100 50 {}
+L 4 100 20 120 20 {}
+L 4 -100 -80 -100 80 {}
+L 4 -100 100 100 100 {}
+L 4 100 -80 100 100 {}
+L 4 -100 -80 100 -80 {}
+L 4 -100 80 -100 100 {}
+L 4 100 -40 120 -40 {}
+B 5 -122.5 -52.5 -117.5 -47.5 {name=clk_i
+dir=inout}
+B 5 -122.5 -32.5 -117.5 -27.5 {name=rst_ni
+dir=inout}
+B 5 -122.5 -12.5 -117.5 -7.5 {name=start_i
+dir=inout}
+B 5 -122.5 27.5 -117.5 32.5 {name=comp_p_i
+dir=inout}
+B 5 117.5 -2.5 122.5 2.5 {name=dac_p_o[0..6]
+dir=inout}
+B 5 117.5 57.5 122.5 62.5 {name=rdy_o
+dir=inout}
+B 5 117.5 -62.5 122.5 -57.5 {name=sample_o
+dir=inout}
+B 5 117.5 77.5 122.5 82.5 {name=result_o[0..7]
+dir=inout}
+B 5 -122.5 47.5 -117.5 52.5 {name=comp_n_i
+dir=inout}
+B 5 117.5 17.5 122.5 22.5 {name=dac_n_o[0..6]
+dir=inout}
+B 5 117.5 -42.5 122.5 -37.5 {name=compare_o
+dir=inout}
+T {clk_i} -90 -60 0 0 0.3 0.3 {}
+T {rst_ni} -90 -40 0 0 0.3 0.3 {}
+T {start_i} -90 -20 0 0 0.3 0.3 {}
+T {comp_p_i} -90 20 0 0 0.3 0.3 {}
+T {dac_p_o} 30 -10 0 0 0.3 0.3 {}
+T {rdy_o} 50 50 0 0 0.3 0.3 {}
+T {sample_o} 20 -70 0 0 0.3 0.3 {}
+T {result_o} 30 70 0 0 0.3 0.3 {}
+T {comp_n_i} -90 40 0 0 0.3 0.3 {}
+T {dac_n_o} 30 10 0 0 0.3 0.3 {}
+T {compare_o} 10 -50 0 0 0.3 0.3 {}

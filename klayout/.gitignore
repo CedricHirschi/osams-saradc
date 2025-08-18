@@ -1,0 +1,4 @@
+.klayout/
+
+*.cir
+*.gds

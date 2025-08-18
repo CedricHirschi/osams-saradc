@@ -1,0 +1,10 @@
+.bender/
+
+rtl/common_cells/
+rtl/common_verification/
+rtl/patches/
+rtl/register_interface/
+
+verilator/obj_dir/
+
+scripts/figures/

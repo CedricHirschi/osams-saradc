@@ -1,0 +1,52 @@
+v {xschem version=3.4.8RC file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -120 -70 -100 -70 {}
+L 4 -120 -10 -100 -10 {}
+L 4 -120 10 -100 10 {}
+L 4 -120 50 -100 50 {}
+L 4 100 10 120 10 {}
+L 4 100 -10 120 -10 {}
+L 4 0 -110 0 -90 {}
+L 4 -120 70 -100 70 {}
+L 4 -120 -50 -100 -50 {}
+L 4 0 90 0 110 {}
+L 4 -120 30 -100 30 {}
+B 5 -122.5 -72.5 -117.5 -67.5 {name=pos_ai
+dir=in}
+B 5 -122.5 -12.5 -117.5 -7.5 {name=start_i
+dir=in}
+B 5 -122.5 7.5 -117.5 12.5 {name=rst_ni
+dir=in}
+B 5 -122.5 47.5 -117.5 52.5 {name=clk_digital_i
+dir=in}
+B 5 117.5 7.5 122.5 12.5 {name=result_o[0..7]
+dir=out}
+B 5 117.5 -12.5 122.5 -7.5 {name=ready_o
+dir=out}
+B 5 -2.5 -112.5 2.5 -107.5 {name=VDD
+dir=in}
+B 5 -2.5 107.5 2.5 112.5 {name=VSS
+dir=in}
+B 5 -122.5 67.5 -117.5 72.5 {name=clk_comp_i
+dir=in}
+B 5 -122.5 -52.5 -117.5 -47.5 {name=neg_ai
+dir=in}
+B 5 -122.5 27.5 -117.5 32.5 {name=clk_sample_i
+dir=in}
+P 4 5 -100 -90 100 -90 100 90 -100 90 -100 -90 {}
+T {pos_ai} -90 -80 0 0 0.3 0.3 {}
+T {start_i} -90 -20 0 0 0.3 0.3 {}
+T {rst_ni} -90 0 0 0 0.3 0.3 {}
+T {clk_digital_i} -90 40 0 0 0.3 0.3 {}
+T {result_o[0..7]} -10 0 0 0 0.3 0.3 {}
+T {ready_o} 30 -20 0 0 0.3 0.3 {}
+T {clk_comp_i} -90 60 0 0 0.3 0.3 {}
+T {neg_ai} -90 -60 0 0 0.3 0.3 {}
+T {clk_sample_i} -90 20 0 0 0.3 0.3 {}
