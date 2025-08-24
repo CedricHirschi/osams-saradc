@@ -20,23 +20,8 @@ set_thread_count 8
 ## Driving Cells and Loads ##
 #############################
 
-# Default light digital load for most outputs
-set_load 1.0 [all_outputs]
-
-# Heavier loads for analog interface signals that might drive off-chip
-set_load 5.0 [get_ports compare_o]
-set_load 5.0 [get_ports sample_o]
-
-# DAC outputs drive analog circuits, moderate load
-set_load 3.0 [get_ports dac_p_o_*]
-set_load 3.0 [get_ports dac_n_o_*]
-
-# Digital result outputs - light load (on-chip digital processing)
-set_load 1.0 [get_ports result_o_*]
-set_load 1.0 [get_ports rdy_o]
-
-# # Input driving cells - keep as GPIO pads
-# set_driving_cell [all_inputs] -lib_cell sg13g2_IOPadOut16mA -pin pad
+# Default load for outputs
+set_load 0.05 [all_outputs]
 
 
 ##################
